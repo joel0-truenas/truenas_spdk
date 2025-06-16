@@ -17,9 +17,9 @@ export am_cv_python_pyexecdir=/usr/lib/python3/dist-packages
 
 confflags = \
 	--prefix=/usr \
-	--libdir=/usr/lib/x86_64-linux-gnu \
+	--libdir=/usr/lib/${DEB_TARGET_GNU_CPU}-linux-gnu \
 	--with-rdma \
-	--with-uring=/usr/lib/x86_64-linux-gnu \
+	--with-uring=/usr/lib/${DEB_TARGET_GNU_CPU}-linux-gnu \
 	--with-vfio-user \
 	--without-rbd \
 	--without-ublk \
